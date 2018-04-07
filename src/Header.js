@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const Header = props =>
 {
     return(
@@ -18,20 +19,18 @@ const Header = props =>
             </button>
             <div className='collapse navbar-collapse' id='navbarResponsive'>
               <ul className='navbar-nav mx-auto'>
-                <li className='nav-item active px-lg-4'>
-                  <a className='nav-link text-uppercase text-expanded' href='index.html'>Início
-                    <span className='sr-only'>(current)</span>
-                  </a>
-                </li>
-                <li className='nav-item px-lg-4'>
-                  <a className='nav-link text-uppercase text-expanded' href='about.html'>Sobre</a>
-                </li>
-                <li className='nav-item px-lg-4'>
-                  <a className='nav-link text-uppercase text-expanded' href='products.html'>Campanhas</a>
-                </li>
-                <li className='nav-item px-lg-4'>
-                  <a className='nav-link text-uppercase text-expanded' href='store.html'>Contato</a>
-                </li>
+                  <li className='nav-item active px-lg-4'>
+                    <Link to='/' className='nav-link text-uppercase text-expanded'>Início</Link>
+                  </li>
+                  <li className='nav-item px-lg-4'>
+                    <Link to='/Sobre' className='nav-link text-uppercase text-expanded'>Sobre</Link>
+                  </li>
+                  <li className='nav-item px-lg-4'>
+                    <Link to='/Campanhas' className='nav-link text-uppercase text-expanded'>Campanhas</Link>
+                  </li>
+                  <li className='nav-item px-lg-4'>
+                    <Link to='/Contato' className='nav-link text-uppercase text-expanded'>Contato</Link>
+                  </li>
               </ul>
             </div>
           </div>
