@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Sobre = props=>{
     return(
         <section className='page-section about-heading'>

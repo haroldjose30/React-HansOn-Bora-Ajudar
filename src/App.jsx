@@ -13,26 +13,21 @@ import Sobre from "./Sobre";
 import Contato from "./Contato";
 import Campanhas from "./Campanhas";
 import base from "./base";
-import Admin from './Admin'
+import Admin from './Admin';
+import Login from './Login';
 
 
 class App extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      contador: 1
-    }
+
   }
 
 
 
   componentDidMount() {
-    base.syncState('contador', {
-      context: this,
-      state: 'contador',
-      asArray: false
-    })
+ 
   }
 
   render() {
@@ -41,13 +36,12 @@ class App extends Component {
         <div>
           <Header />
           <div>
-            <h1>Contador { this.state.contador} </h1>
-            <button onClick={()=> this.setState({contador:'ola react'})}>Ola </button>
             <Route exact path='/' component={Home} />
             <Route path='/Sobre' component={Sobre} />
             <Route path='/Contato' component={Contato} />
             <Route path='/Campanhas' component={Campanhas} />
             <Route path='/Admin' component={Admin} />
+            <Route path='/Login' component={Login} />
           </div>
           <Footer />
         </div>
