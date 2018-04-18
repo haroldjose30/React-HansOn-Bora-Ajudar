@@ -21,9 +21,15 @@ class Campanhas extends React.Component {
         })
     }
 
-    renderCampanha(campanha) {
+    handleDonate(key){
+        console.log('handleDonate');
+        console.log(key);
+        
+    }
+
+    renderCampanha(key,campanha) {
         return (
-            <section className='page-section'>
+            <section className='page-section' key={key}>
                 <div className='container'>
                     <div className='product-item bg-faded'>
                         <div className='product-item-title d-flex'>
@@ -38,14 +44,14 @@ class Campanhas extends React.Component {
                             <div className='p-5 rounded'>
                                 <p className='mb-0'>{campanha.descricao}</p>
 
-                                {campanha.tipo === 'dinheiro' &&
+                                {campanha.tipo === 'doacao' &&
                                     <div>
                                         <div className='progress'>
                                             <div className='progress-bar bg-success' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
                                         </div>
-                                        <p>Meta: R$ 5.000,00 / Atingidos: R$ 2.500,00</p>
+                                        <p>Meta: R$ {campanha.meta} / Atingidos: R$ {campanha.doado}</p>
                                         <div>
-                                            <button className='btn btn-success'>Contribuir</button>
+                                            <button className='btn btn-success' onClick={ () => this.handleDonate(key)}>Contribuir</button>
                                         </div>
                                     </div>
                                 }
@@ -95,7 +101,7 @@ class Campanhas extends React.Component {
 
                 {Object
                     .keys(this.state.campanhas)
-                    .map(key => this.renderCampanha(this.state.campanhas[key]))
+                    .map(key => this.renderCampanha(key,this.state.campanhas[key]))
                 };
 
 

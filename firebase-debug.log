@@ -1,0 +1,43 @@
+[debug] [2018-04-18T23:06:35.820Z] ----------------------------------------------------------------------
+[debug] [2018-04-18T23:06:35.822Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2018-04-18T23:06:35.823Z] CLI Version:   3.18.4
+[debug] [2018-04-18T23:06:35.823Z] Platform:      darwin
+[debug] [2018-04-18T23:06:35.823Z] Node Version:  v9.11.1
+[debug] [2018-04-18T23:06:35.823Z] Time:          Wed Apr 18 2018 20:06:35 GMT-0300 (-03)
+[debug] [2018-04-18T23:06:35.823Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-18T23:06:35.834Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-18T23:06:35.834Z] > authorizing via signed-in user
+[debug] [2018-04-18T23:06:35.836Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-18T23:06:35.836Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/X7PIwxcsXAtZCWYRXOixJUdC2_eH5Igq0RtBrIYBa68',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Apr 18 2018 20:06:35 GMT-0300 (-03)
+[debug] [2018-04-18T23:06:36.207Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T23:06:36.219Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/estudo-react-bora-ajudar  
+  
+ Wed Apr 18 2018 20:06:36 GMT-0300 (-03)
+[debug] [2018-04-18T23:06:37.247Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T23:06:37.247Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/estudo-react-bora-ajudar/tokens  
+  
+ Wed Apr 18 2018 20:06:37 GMT-0300 (-03)
+[debug] [2018-04-18T23:06:37.980Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T23:06:37.981Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/estudo-react-bora-ajudar  
+  
+ Wed Apr 18 2018 20:06:37 GMT-0300 (-03)
+[debug] [2018-04-18T23:06:38.863Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/haroldjose/Documents/Projects/Estudos/ReactHandsOn_BoraAjudar/app-bora-ajudar'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-04-18T23:06:39.424Z] Fetching environment
+[debug] [2018-04-18T23:06:39.426Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/252394730774:getServerAppConfig  
+  
+ Wed Apr 18 2018 20:06:39 GMT-0300 (-03)
+[debug] [2018-04-18T23:06:40.785Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-18T23:06:40.786Z] Starting @google-cloud/functions-emulator
+[debug] [2018-04-18T23:06:42.863Z] Parsing function triggers
+[info] ✔  functions: api: http://localhost:5000/estudo-react-bora-ajudar/us-central1/api
