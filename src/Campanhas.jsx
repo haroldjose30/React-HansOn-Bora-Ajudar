@@ -1,6 +1,7 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import base from './base'
-
+import axios from 'axios'
 
 class Campanhas extends React.Component {
 
@@ -24,6 +25,18 @@ class Campanhas extends React.Component {
     handleDonate(key){
         console.log('handleDonate');
         console.log(key);
+
+        axios
+        .post('/api/donate',{
+            campanha:key,
+            valor:3
+        })
+        .then(data => {
+            console.log('handleDonate-post-ok');
+            console.log(data);
+            window.location = data.data.url; 
+        })
+
         
     }
 
